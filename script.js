@@ -1,27 +1,40 @@
 let titulo = document.getElementById("titulo");
 console.log("Exibindo por ID:", titulo);
 
-titulo.style.color = "orange"; 
+titulo.style.color = "blue"; 
 
 const lista = document.querySelector("ul"); 
 
 // adicionar esporte na lista
 
-let novoEsporte = document.createElement("li"); 
-novoEsporte.textContent = "Tênis"; 
-novoEsporte.classList.add("esporte"); 
+let listaSport = document.getElementById("esportes");
 
-lista.appendChild(novoEsporte);
+let novoEsporte1 = document.createElement("li"); 
+novoEsporte1.textContent = "Tênis"; 
+
+listaSport.appendChild(novoEsporte1);
+
+let novoEsporte2 = document.createElement("li"); 
+novoEsporte2.textContent = "Musculação"; 
+
+listaSport.appendChild(novoEsporte2);
+
+let novoEsporte3 = document.createElement("li"); 
+novoEsporte3.textContent = "Beach Tennis"; 
+
+listaSport.appendChild(novoEsporte3);
 
 
-let esportesPorClasse = document.getElementsByClassName("esporte");
-console.log("Exibindo por Classe:", esportesPorClasse);
+// let esportes = document.getElementById("esportes")
 
-let esportesPorTag = document.getElementsByTagName("li");
-console.log("Exibindo por Tag:", esportesPorTag);
+// let esportesPorClasse = document.getElementsByClassName("esporte");
+// console.log("Exibindo por Classe:", esportesPorClasse);
 
-let primeiroEsporte = document.querySelector(".esporte");
-console.log("Exibindo com querySelector:", primeiroEsporte);
+// let esportesPorTag = document.getElementsByTagName("li");
+// console.log("Exibindo por Tag:", esportesPorTag);
 
-let todosEsportes = document.querySelectorAll(".esporte");
-console.log("Exibindo com querySelectorAll:", todosEsportes);
+// let primeiroEsporte = document.querySelector(".esporte");
+// console.log("Exibindo com querySelector:", primeiroEsporte);
+
+// let todosEsportes = document.querySelectorAll(".esporte");
+// console.log("Exibindo com querySelectorAll:", todosEsportes);
